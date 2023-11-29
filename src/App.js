@@ -12,7 +12,7 @@ const App = () => {
   const connect = async () => {
     try {
       const newConnection = await new HubConnectionBuilder()
-        .withUrl('https://noti-service.onrender.com/NotiHub') // Thay thế bằng URL của ứng dụng ASP.NET Core của bạn
+        .withUrl('https://noti-service-0-0-1.onrender.com/NotiHub') // Thay thế bằng URL của ứng dụng ASP.NET Core của bạn
         .withAutomaticReconnect()
         .build();
       newConnection.on('GetListNoti', (message) => {
